@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap");
+
+:root {
+  --background-color: hsl(217, 54%, 11%);
+  --card-background-color: hsl(216, 50%, 16%);
+  --view-background-color: hsl(178, 100%, 50%, 0.5);
+  --shadow-dark-color: hsla(215, 54%, 7%, 0.323);
+  --shadow-light-color: hsla(215, 54%, 7%, 0.09);
+  --hr-color: hsl(215, 32%, 27%);
+  --1-font-color: hsl(0, 0%, 100%);
+  --2-font-color: hsl(178, 100%, 50%);
+  --3-font-colot: hsl(215, 51%, 70%);
+  --main-font: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  color: hsl(215, 51%, 70%);
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 20px;
+  color: var(--1-font-color);
+  font-weight: 600;
+  transition-duration: 0.2s;
+}
+h1:hover {
+  color: var(--2-font-color);
+  cursor: pointer;
+}
+
+p {
+  font-size: 18px;
+}
+
+hr {
+  background-color: var(--hr-color);
+  color: var(--hr-color);
+  border: 1px solid var(--hr-color);
+  opacity: 0.5;
+
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+strong {
+  color: var(--1-font-color);
+  font-weight: 600;
+  transition-duration: 0.2s;
+}
+strong:hover {
+  color: var(--2-font-color);
+  cursor: pointer;
+}
+
+a {
+  color: var(--1-font-color);
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+a:hover {
+  color: var(--2-font-color);
+}
+
+.card {
+  background-color: var(--card-background-color);
+  border-radius: 16px;
+
+  width: 280px;
+  height: 500px;
+  padding: 20px;
+  position: absolute;
+  top: 15px;
+  right: 47.5px;
+}
+
+.card-picture {
+  border-radius: 8px;
+
+  width: 280px;
+  height: auto;
+  margin: auto;
+}
+
+.view {
+  background-color: var(--view-background-color);
+  border-radius: 8px;
+  opacity: 0;
+  transition-duration: 0.2s;
+
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  width: 280px;
+  height: 280px;
+}
+.view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon-view {
+  width: 40px;
+  margin: 120px;
+}
+
+.value {
+  font-size: 14px;
+  color: var(--2-font-color);
+  font-weight: 600;
+
+  display: inline-block;
+  width: 49%;
+}
+
+.time-left {
+  font-size: 14px;
+  font-weight: 600;
+
+  display: inline-block;
+  text-align: right;
+  width: 49%;
+}
+
+.icon {
+  vertical-align: sub;
+  margin-right: 10px;
+}
+
+.image-avatar {
+  border: 1px solid var(--1-font-color);
+  border-radius: 100px;
+  vertical-align: middle;
+  width: 30px;
+  margin-right: 15px;
+}
+
+.creator {
+  margin: 15px 0;
+}
+
+.shadow-light {
+  background-color: var(--shadow-light-color);
+  border-radius: 60px;
+
+  position: relative;
+  width: 370px;
+  height: 580px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.shadow-dark {
+  background-color: var(--shadow-dark-color);
+  border-radius: 50px;
+
+  width: 355px;
+  height: 560px;
+  margin: 5px;
+}
